@@ -55,7 +55,7 @@ Once done,  [[go here-&gt;Pattern1.1]].
 ]
 
 
-Once done, get your surprise. [[Random Bonus-&gt;Surprise Bonus1]].
+Once done, get your [[surprise-&gt;Surprise Bonus1]].
 
 (unless: ((passage:)&#39;s tags contains &quot;menu&quot;))[
     (set: $lastPassage to (passage:)&#39;s name)
@@ -255,7 +255,7 @@ Once done,  [[go here-&gt; Pattern2.1]].
 ]
 
 
-Once done,  do one of the bonus worksheets that have not yet been played at random. [[Random Bonus-&gt;Surprise Bonus2]].
+Once done, get your [[surprise-&gt;Surprise Bonus2]].
 
 (unless: ((passage:)&#39;s tags contains &quot;menu&quot;))[
     (set: $lastPassage to (passage:)&#39;s name)
@@ -354,7 +354,8 @@ Once done,  [[go here-&gt; Pattern2.2]].
 ]
 
 
-Once done,  do one of the bonus worksheets that have not yet been played at random. [[Random Bonus-&gt;Surprise Bonus3]].
+Once done, get your [[surprise-&gt;Surprise Bonus3]].
+
 
 (unless: ((passage:)&#39;s tags contains &quot;menu&quot;))[
     (set: $lastPassage to (passage:)&#39;s name)
@@ -379,11 +380,11 @@ Otherwise, [[do this worksheet again -&gt;Worksheet Test Level 1]].
 (text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Dataeon was wordless and emotional. Visette realized that and she said &quot;People are great and so diverse. We live in different places and according to different cultures. You must to see more now. Come with me.&quot;//]
 
 [&lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/trip.png&quot; style=&quot;height:300px;&quot;&gt;]
-[[She goes home -&gt;Worksheet Test Level 1]]</tw-passagedata><tw-passagedata pid="30" name="Next level" tags="" position="3000,575" size="100,100">If...  [[Final1 -&gt; Final1]].
-If...  [[Final1 -&gt; Final2]].
-If...  [[Final1 -&gt; Final3]].
-If...  [[Final1 -&gt; Final4]].
-If...  [[Final1 -&gt; Final5]].</tw-passagedata><tw-passagedata pid="31" name="Rolling the die" tags="" position="1600,50" size="100,100">(enchant:?page, (text-colour:black) + (bg:white))
+[[She goes home -&gt;Worksheet Test Level 1]]</tw-passagedata><tw-passagedata pid="30" name="Next level" tags="" position="3000,575" size="100,100">If...  [[go here -&gt; Final1]].
+If...  [[go here -&gt; Final2]].
+If...  [[go here -&gt; Final3]].
+If...  [[go here -&gt; Final4]].
+If...  [[go here -&gt; Final5]].</tw-passagedata><tw-passagedata pid="31" name="Rolling the die" tags="" position="1600,50" size="100,100">(enchant:?page, (text-colour:black) + (bg:white))
 (set: $die to (random: 1, 6))
 You rolled: $die
 
