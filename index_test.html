@@ -3,26 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Help Visette! Pilot (game)</title>
+<title>Help Visette! Pilot (questions)</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Help Visette! Pilot (game).</tw-noscript></noscript></tw-story>
-<tw-storydata name="Help Visette! Pilot (game)" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="ee33bb5d-ec44-4456-a596-d3cc57724d9b" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue" tags="" position="350,550" size="100,100">(set: $lastPassage to &quot;&quot;)
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Help Visette! Pilot (questions).</tw-noscript></noscript></tw-story>
+<tw-storydata name="Help Visette! Pilot (questions)" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="d055d2b1-dbc7-4fa9-bac0-d694354f98c3" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue" tags="" position="350,550" size="100,100">(set: $lastPassage to &quot;&quot;)
 
-# (text-colour:orange)[Help Visette!]
+# (text-colour:orange)[Select the right chart!]
 
-(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//It’s the year 2072, and a staggering truth has been uncovered: we are nothing more than projections—manifestations of higher beings who can inhabit our bodies whenever they choose. One such being, Dataeon, grows curious about the human condition and the world, and decides to experience life on Earth firsthand for a while. To do so, he reaches his human projection: Visette, a brilliant girl passionate in data visualization, who will have to bear him until Dataeon will be satisfied with his visit.//]
+(enchant:?page,(text-colour:black)+(bg:#f7f6f4))(css:&quot;font-size:0.8em;&quot;)[//Select the most appropriate chart for each question. You will earn one point for a correct answer and two points if you choose the best answer.//]
 
-[&lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/visette.png&quot; style=&quot;width:160px; float:right; margin-right:10px;&quot;&gt;]
-
-(css:&quot;font-size:0.8em;&quot;)[//Yet, Visette&#39;s kindness, combined with the planet&#39;s widespread visual illiteracy, often traps her in tedious encounters that prevent others from fully appreciating the world’s true beauty and complexity. Your mission is to help Visette navigate these frustrating characters and unfortunate events she encounters along her journey—and to ensure that her experience on Dataeon is pleasant enough to finally leave her in peace//]
 (set: _style to (css:&quot;display:block; text-align:right;&quot;))
 _style[
 [[Continue-&gt;Disclaimer]]
 ]
-</tw-passagedata><tw-passagedata pid="2" name="Worksheet 1.1.2.1" tags="uno" position="1050,325" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//They arrive in Visette’s hometown, where she introduces Dataeon to the many places and daily activities that bring her joy and keep her entertained. Together, they begin to wander through the familiar streets, exploring at a relaxed pace.//]
+</tw-passagedata><tw-passagedata pid="2" name="Worksheet 1.1.2.1" tags="uno" position="1050,300" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Line Chart** 
 A line chart is composed of a Cartesian plane with a continuous numeric or temporal x-axis and a numeric y-axis. Data points are plotted at their respective coordinates and connected by line segments. The line serves as both a positional connector and a continuous visual encoding of trend.
@@ -87,8 +84,7 @@ A Venn diagram’s anatomy consists of overlapping shapes (commonly circles) rep
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $submitted to false)
 (css:&quot;font-size:0.8em;&quot;)
 [
-**At home**
-Visette’s mother would like to investigate which family members use which devices. Her husband mostly uses the laptop and TV, Visette alternates between her tablet and phone, and her son uses the game console and smartphone simultaneously. So, she asks Visette to suggest a chart that shows who interacts with what and where their activities overlap while she is petting her lovely dog.
+Husband uses laptop &amp; TV, Visette uses tablet &amp; phone, son uses console &amp; smartphone. Which chart shows device usage and overlaps for each family member?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -127,8 +123,8 @@ Visette’s mother would like to investigate which family members use which devi
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**At the clothing store**
-The store manager wants to see how each customer category—women, men, and kids—contributes to total revenue. Last month, women accounted for about 45%, men for 35%, and kids for 20% of sales. So, she asks Visette to suggest a chart that uses angles to represent each category’s share while she is trying on a colorful hat.]
+Last month, women contributed 45%, men 35%, and kids 20% of total sales. Which chart can show each category’s share using angles?
+]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -165,8 +161,8 @@ The store manager wants to see how each customer category—women, men, and kids
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At school**
-The teacher wants to track how the temperature in the school greenhouse changes throughout the day. Starting at 18°C at 7:00 a.m., it climbs steadily to 27°C by noon, peaks at 30°C around 2:00 p.m., and then cools down to 20°C by evening as the sun sets. So, he asks Visette to suggest a chart that would show the rise and fall of temperature over time while she is passionately revising the science lesson.]
+The school greenhouse temperature changes from 18°C at 7:00 a.m. to 27°C at noon, peaks at 30°C at 2:00 p.m., and drops to 20°C by evening. Which chart shows temperature changes over time?
+]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -203,8 +199,8 @@ The teacher wants to track how the temperature in the school greenhouse changes 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the museum**
-The museum director wants to track how much time visitors spend in each exhibit and how much money they spend in the gift shop. Families stay for an average of 90 minutes and spend about $25 while solo visitors average 60 minutes and $10, and tour groups stay around 120 minutes, spending $40 each. So, she asks Visette to suggest a chart that can show the relationship between time and spending for different groups, and highlight which groups are the largest while she is appreciating an original painting.]
+Families: 90 min/$25, Solo: 60 min/$10, Tour groups: 120 min/$40. Which chart shows time vs. spending and identifies largest groups?
+]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -241,8 +237,8 @@ The museum director wants to track how much time visitors spend in each exhibit 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the pastry shop**
-The baker has always wondered which dessert—pies, cakes, or puddings—rank first in Sunday orders. On a typical Sunday, he sells around 50 pies, 40 cakes, and 20 puddings. So, he asks Visette to suggest a chart that would show these different desserts clearly while she is eating a tasty éclair.]
+On a typical Sunday, the baker sells 50 pies, 40 cakes, and 20 puddings. Which chart best shows these sales?
+]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -279,8 +275,8 @@ The baker has always wondered which dessert—pies, cakes, or puddings—rank fi
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the theme park**
-A park visitor would like to know how ticket prices for each attraction relate to daily ride attendance. The roller coaster charges $8 per ride and attracts about 500 visitors a day, the carousel charges $4 and attracts around 700 visitors, and the Ferris wheel charges $6 and attracts roughly 600 visitors. So, he asks Visette if she can suggest a chart to see the correlation between price and attendance while she is on an amusing ride.]
+Roller coaster $8/500, Carousel $4/700, Ferris wheel $6/600. Which chart shows the correlation between ticket price and daily attendance?
+]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -322,7 +318,7 @@ A park visitor would like to know how ticket prices for each attraction relate t
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
 (if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
+**Excellent!** - [[Go here now-&gt;Story 7]]
 ]
 (else-if: $percentage &gt; 70)[
 **Great!** - [[Go here now-&gt;Story 6]]
@@ -643,7 +639,7 @@ Your neighbour John, examining his activity patterns over time, wants to show ho
 ]
 ]
 ]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="4" name="Worksheet 1.1.2.4" tags="" position="1050,775" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//A true haven of peace: the natural world. Visette and Dataeon ventured into the wild, expecting beauty, calm, and surprise.//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="4" name="Worksheet 1.1.2.4" tags="" position="1050,800" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Line Chart** 
 A line chart is composed of a Cartesian plane with a continuous numeric or temporal x-axis and a numeric y-axis. Data points are plotted at their respective coordinates and connected by line segments. The line serves as both a positional connector and a continuous visual encoding of trend.
@@ -709,8 +705,7 @@ A Venn diagram’s anatomy consists of overlapping shapes (commonly circles) rep
 
 (css:&quot;font-size:0.8em;&quot;)
 [
-**At the sea**
-A bather wants to learn more about the number of visitors participating in different water activities at the beach. So, he asks Visette to suggest a chart that can show how each activity compares in popularity, helping him clearly see which activity attracts the most people while she is surfing intrepidly.
+Which type of chart would you use to clearly show and compare the rankings of categories?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q1&gt;[[
@@ -749,9 +744,7 @@ A bather wants to learn more about the number of visitors participating in diffe
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**In the jungle**
-&quot;An ecologist wants to observe the proportion of different animal species observed in a research area.
-So, she asks Visette to suggest a common chart that can show how each species contributes to the total observations while she is playing with a friendly bonobo.&quot;
+Which type of chart would you use to show how parts of a whole are divided into categories in a common way?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q2&gt;[[
@@ -789,8 +782,7 @@ So, she asks Visette to suggest a common chart that can show how each species co
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In the mountains**
-A hiker wants to track the temperature changes and wind speed at a high-altitude station throughout the day. So, she asks Visette to suggest a chart that can show how both variables change over time and help her spot trends and fluctuations while she is enjoying the crisp mountain air and the sunrise over the peaks.
+Which type of chart would you use to show continuous changes or trends in data over time?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q3&gt;[[
@@ -828,8 +820,7 @@ A hiker wants to track the temperature changes and wind speed at a high-altitude
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**By a river**
-A fisherman wants to analyse the characteristics of different fish species at different points along the river. So, he asks Visette to suggest a chart that can show the relationship between species count and population size for each location while she is meditating along the river.
+Which type of chart would you use to show the relationships between three variables?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q4&gt;[[
@@ -867,8 +858,7 @@ A fisherman wants to analyse the characteristics of different fish species at di
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In a meadow**
-A shepherd is curious about the types of pollinators visiting different flower species in the meadow. So, he asks Visette to suggest a chart that can show which pollinators visit multiple flower types and where their visits overlap while she is enjoying the buzzing of bees.
+Which type of chart would you use to show the relationships and intersections among groups?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q5&gt;[[
@@ -906,8 +896,7 @@ A shepherd is curious about the types of pollinators visiting different flower s
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At a lake**
-A biologist wants to study the water clarity and the algae concentration at different spots around the lake. So, he asks Visette to suggest a chart that can show the relationship between clarity and algae levels at each location while she is throwing some little stones.
+Which type of chart of chart would you use to show the correlation between two numeric variables?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q6&gt;[[
@@ -949,25 +938,31 @@ A biologist wants to study the water clarity and the algae concentration at diff
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
-**Well done!** - [[Go here now-&gt;Surprise Bonus1]]
+(if: $percentage &gt; 90)[
+**Excellent!** - [[Go here now-&gt;Story 7]]
+]
+(else-if: $percentage &gt; 70)[
+**Great!** - [[Go here now-&gt;Story 6]]
+]
+(else:)[
+**Well done!** - [[Go here now-&gt;Story 5]]
+]
 ]
 ]
 |result&gt;[]</tw-passagedata><tw-passagedata pid="5" name="Story 1" tags="" position="850,450" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Dataeon felt content about this experience. He deeply appreciated the animal variety and Visette was pleased about that. Ready to rest, she knew just where to go for a quiet moment. And with a burst of enthusiasm, she took off running.//]
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select one of the two worksheets to continue.//]
 
 &lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/home.jpg&quot; style=&quot;height:200px;&quot;&gt;
-        [[They go to Visette&#39;s home -&gt;Worksheet 1.1.2.1]]
+        [[Worksheet A -&gt;Worksheet 1.1.2.1]]
     &lt;/div&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/nature.jpeg&quot;  style=&quot;height:200px;&quot;&gt;
-        [[They go into nature -&gt;Worksheet 1.1.2.2]]
+        [[Worksheet B -&gt;Worksheet 1.1.2.2]]
     &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Worksheet 1.1.2.2" tags="" position="1050,475" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//A true haven of peace: the natural world. Visette and Dataeon ventured into the outdoors, eager to be amazed by its beauty and to enjoy its calm.//]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Worksheet 1.1.2.2" tags="" position="1050,475" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Line Chart** 
 A line chart is composed of a Cartesian plane with a continuous numeric or temporal x-axis and a numeric y-axis. Data points are plotted at their respective coordinates and connected by line segments. The line serves as both a positional connector and a continuous visual encoding of trend.
@@ -1032,8 +1027,8 @@ A Venn diagram’s anatomy consists of overlapping shapes (commonly circles) rep
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $submitted to false)
 
 (css:&quot;font-size:0.8em;&quot;)[
-**At the sea**
-A bather wants to learn more about the number of visitors participating in different water activities at the beach. On a sunny afternoon, there are around 80 people swimming, 50 people surfing, and 30 people kayaking. So, he asks Visette to suggest a chart that can show how each activity compares in popularity, helping him clearly see which attracts the most people while she is surfing intrepidly.
+Swimming: 80, Surfing: 50, Kayaking: 30.
+Which chart best shows the number of visitors participating in different water activities at the beach?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -1070,9 +1065,10 @@ A bather wants to learn more about the number of visitors participating in diffe
 ]
 ]
 ---
-(css:&quot;font-size:0.8em;&quot;)[
-**In the jungle**
-An ecologist wants to observe the proportion of different animal species recorded in a research area. During her latest field study, she notes around 60 birds, 25 monkeys, and 15 reptiles. So, she asks Visette to suggest a common chart that can show how each species contributes to the total observations while she is playing with a friendly bonobo.
+(css:&quot;font-size:0.8em;&quot;)
+[
+Birds: 60, Monkeys: 25, Reptiles: 15.
+Which chart best shows the proportion of different animal species recorded in the research area?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
@@ -1110,8 +1106,8 @@ An ecologist wants to observe the proportion of different animal species recorde
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In the mountains**
-A hiker wants to track the temperature changes and wind speed at a high-altitude station throughout the day. From dawn to dusk, the temperature ranges from 2°C in the morning to 14°C in the afternoon while wind speeds vary between 10 and 35 km/h. So, she asks Visette to suggest a chart that can show how both variables change over time and help her spot trends and fluctuations while she is enjoying the crisp mountain air and the sunrise over the peaks.
+Temperature: 2°C → 14°C, Wind speed: 10 km/h → 35 km/h (throughout the day).
+Which chart best shows how both temperature and wind speed change over time at the high-altitude station?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
@@ -1149,8 +1145,10 @@ A hiker wants to track the temperature changes and wind speed at a high-altitude
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**By a river**
-A fisherman wants to analyze the characteristics of different fish species at various points along the river. In his latest survey, he records data on species count, average fish weight, and population size for each location. Upstream, trout number around 120 with an average weight of 1.2 kg; midstream, carp number about 90 with an average weight of 1.8 kg; and downstream, catfish number roughly 60 with an average weight of 2.5 kg. So, he asks Visette to suggest a chart that can show how these species compare across locations while she is meditating peacefully by the flowing river.
+Upstream (Trout): 120 fish, avg. weight = 1.2 kg
+Midstream (Carp): 90 fish, avg. weight = 1.8 kg
+Downstream (Catfish): 60 fish, avg. weight = 2.5 kg
+Which chart best shows the relationship between fish species, average weight, and population size across the river locations?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
@@ -1188,8 +1186,11 @@ A fisherman wants to analyze the characteristics of different fish species at va
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In a meadow**
-A shepherd is curious about the types of pollinators visiting different flower species in the meadow. During his observations, he notes that 30 bees, 10 butterflies, and 5 hummingbirds visit daisies; 25 bees, 15 butterflies, and 8 hummingbirds visit sunflowers; and 20 bees, 5 butterflies, and 2 hummingbirds visit clover. So, he asks Visette to suggest a chart that can show which pollinators visit multiple flower types and where their visits overlap while she is enjoying the buzzing of bees.
+Flower species visits by pollinators:
+Daisies: Bees 30, Butterflies 10, Hummingbirds 5
+Sunflowers: Bees 25, Butterflies 15, Hummingbirds 8
+Clover: Bees 20, Butterflies 5, Hummingbirds 2
+Which chart best shows which pollinators visit multiple flower types and where their visits overlap?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
@@ -1226,8 +1227,11 @@ A shepherd is curious about the types of pollinators visiting different flower s
 ]]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At a lake**
-A biologist wants to study the water clarity and the algae concentration at different spots around the lake. During his survey, he notes that Spot A has 5 m clarity and 30 mg/L algae, Spot B has 3 m clarity and 50 mg/L algae, and Spot C has 7 m clarity and 20 mg/L algae. So, he asks Visette to suggest a chart that can show the relationship between clarity and algae levels at each location while she is throwing some little stones.
+Water clarity (meters) vs. algae concentration (mg/L) at three lake spots:
+Spot A: Clarity 5 m, Algae 30 mg/L
+Spot B: Clarity 3 m, Algae 50 mg/L
+Spot C: Clarity 7 m, Algae 20 mg/L
+Which chart best shows the relationship between water clarity and algae levels at each location?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
@@ -1270,7 +1274,7 @@ A biologist wants to study the water clarity and the algae concentration at diff
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
 (if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
+**Excellent!** - [[Go here now-&gt;Story 7]]
 ]
 (else-if: $percentage &gt; 70)[
 **Great!** - [[Go here now-&gt;Story 6]]
@@ -1281,21 +1285,19 @@ A biologist wants to study the water clarity and the algae concentration at diff
 ]
 ]
 |result&gt;[]</tw-passagedata><tw-passagedata pid="7" name="Story 2" tags="" position="850,625" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Dataeon felt deeply satisfied and happy to have been able to appreciate the richness and beauty of the animal diversity. Visette shared his happiness and, in need of rest, she knew exactly where to retreat for a moment of calm. And without warning, she darted off and vanished aboard a helicopter.//]
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select one of the two worksheets to continue.//]
 
 &lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/home.jpg&quot; style=&quot;height:200px;&quot;&gt;
-        [[They go to Visette&#39;s home -&gt;Worksheet 1.1.2.3]]
+        [[Worksheet A -&gt;Worksheet 1.1.2.3]]
     &lt;/div&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/nature.jpeg&quot;  style=&quot;height:200px;&quot;&gt;
-        [[They go into nature -&gt;Worksheet 1.1.2.4]]
+        [[Worksheet B -&gt;Worksheet 1.1.2.4]]
     &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Worksheet 1.1.2.3" tags="" position="1050,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//They reach Visette’s hometown. She leads Dataeon through the streets, visiting with him the spots that fill her days with excitement and warmth.//]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Worksheet 1.1.2.3" tags="" position="1050,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Line Chart** 
 A line chart is composed of a Cartesian plane with a continuous numeric or temporal x-axis and a numeric y-axis. Data points are plotted at their respective coordinates and connected by line segments. The line serves as both a positional connector and a continuous visual encoding of trend.
@@ -1359,10 +1361,9 @@ A Venn diagram’s anatomy consists of overlapping shapes (commonly circles) rep
 ]
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $submitted to false)
 
-(css:&quot;font-size:0.8em;&quot;)[
-**At home**
-Visette’s mother would like to investigate which family members use which devices.
-So, she asks Visette to choose a visualization to show who interacts with what and how their activities overlap while she is petting her lovely dog.
+(css:&quot;font-size:0.8em;&quot;)
+[
+Which type of chart would you use to show the relationships and intersections among different groups?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -1398,12 +1399,10 @@ So, she asks Visette to choose a visualization to show who interacts with what a
 ]
 ]]
 ---
-(css:&quot;font-size:0.8em;&quot;)[
-**At the clothing store**
-The store manager wants to see how each customer category—women, men, and kids—contributes to total revenue.
-So, she asks Visette to suggest a chart that uses angles to represent each category’s share while she is trying on a colorful hat.
+(css:&quot;font-size:0.8em;&quot;)
+[
+Which type of chart would you use to show how parts contribute to a whole using angles or proportions?
 ]
-
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
 (link: &quot;1. Line Chart&quot;)[
@@ -1439,9 +1438,7 @@ So, she asks Visette to suggest a chart that uses angles to represent each categ
 ]]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At school**
-The teacher wants to track how the temperature in the school greenhouse changes throughout the day.
-So, he asks Visette if she can suggest a chart that would show the rise and fall of temperature over time while she is passionately revising the science lesson.
+Which type of chart would you use to show continuous changes or peaks in data over time?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
@@ -1478,9 +1475,7 @@ So, he asks Visette if she can suggest a chart that would show the rise and fall
 ]]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the museum**
-The museum director wants to track the time spent in each exhibit and the money spent in the gift shop by each visitor group.
-So, she asks Visette to suggest a chart that can show the relationship between time and spending for different groups, and highlight which groups are the largest while she is appreciating the original painting.
+Which type of chart would you use to show the relationship between three quantitative variables?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
@@ -1517,9 +1512,7 @@ So, she asks Visette to suggest a chart that can show the relationship between t
 ]]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the pastry shop**
-The baker has always wondered which dessert—pies, cakes, or puddings—rank first in Sunday orders.
-So, he asks Visette if she can find a chart which would show these different desserts clearly while she is eating a tasty éclair.
+Which type of chart would you use to compare and show the rankings or values of categories?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
@@ -1556,9 +1549,7 @@ So, he asks Visette if she can find a chart which would show these different des
 ]]
  ---
 (css:&quot;font-size:0.8em;&quot;)[
-**At the theme park**
-A park visitor would like to know how ticket prices for each attraction relate to daily ride attendance.
-So, he asks Visette if she can suggest him a chart to see the correlation between ticket prices and daily attendance while she is on an amusing ride.
+Which type of chart would you use to visualize the correlation or relationship between two numerical variables?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
@@ -1600,7 +1591,7 @@ So, he asks Visette if she can suggest him a chart to see the correlation betwee
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
 (if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
+**Excellent!** - [[Go here now-&gt;Story 7]]
 ]
 (else-if: $percentage &gt; 70)[
 **Great!** - [[Go here now-&gt;Story 6]]
@@ -1611,42 +1602,32 @@ So, he asks Visette if she can suggest him a chart to see the correlation betwee
 ]
 ]
 |result&gt;[]</tw-passagedata><tw-passagedata pid="9" name="Story 5" tags="" position="1350,550" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//There are many ways to enjoy life on Earth, and one of the simplest is spending time with people who matter to you. With that thought in mind, they set off together down the path.//]
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select one of the two worksheets to continue.//]
 
 &lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/friends.jpg&quot; style=&quot;height:300px;&quot;&gt;
-        [[They meet her friends -&gt;Worksheet 1.2.2.1]]
+        [[Worksheet A -&gt;Worksheet 1.2.2.1]]
     &lt;/div&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/family.jpg&quot;  style=&quot;height:300px;&quot;&gt;
-        [[They meet her family -&gt;Worksheet 1.2.2.2]]
+        [[Worksheet B -&gt;Worksheet 1.2.2.2]]
     &lt;/div&gt;
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Story 6" tags="" position="1350,725" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Visette explained Dataeon why, among the billions, a few rare souls shape the rhythm of our hearts more deeply than any force in the universe and activities in the world while scrolling her smartphone. And with quiet intention, they set off on a scooter.//]
-
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select one of the two worksheets to continue.//]
 
 &lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/friends.jpg&quot; style=&quot;height:300px;&quot;&gt;
-        [[She meets her friends -&gt;Worksheet 1.2.2.3]]
+        [[Worksheet A -&gt;Worksheet 1.2.2.3]]
     &lt;/div&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/family.jpg&quot;  style=&quot;height:300px;&quot;&gt;
-        [[She meets her family -&gt;Worksheet 1.2.2.4]]
+        [[Worksheet B -&gt;Worksheet 1.2.2.4]]
     &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Story 7" tags="" position="1900,575" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Dataeon was both confused and puzzled. People are so different—annoying and amazing at the same time. Visette explained to him that we are multidimensional beings, complex worlds unto ourselves, much like the worlds Dataeon’s projections inhabit, who when interconnect, create beautiful chaos. &quot;Come with me, and I’ll show you what I mean&quot;, said Visette.//]
-
-[&lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/trip.png&quot; style=&quot;height:300px;&quot;&gt;]
-
-[[Continue-&gt;Worksheet Test Level 1]]</tw-passagedata><tw-passagedata pid="12" name="Worksheet 1.2.2.3" tags="" position="1575,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//Visette is surrounded by remarkable beings—so diverse, so unique. An extraordinary experience awaits Dataeon.//]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Worksheet 1.2.2.3" tags="" position="1575,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Violin Plot**
 A violin plot combines density estimation with a symmetric visual representation. The x-axis (or categorical axis) organizes groups, while the y-axis encodes the continuous variable. The shape of each “violin” reflects the kernel density estimate, with width proportional to density. Optional elements such as median lines or boxplots inside the violin convey summary statistics.
@@ -1711,8 +1692,7 @@ A streamgraph is a variant of an area chart, composed of stacked, flowing layers
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $submitted to false)
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Anna, the loyal friend**
-Anna wants to see how her friends&#39; daily habits differ—some spend more time online, others much less. She asks Visette to suggest a chart that shows both the range and shape of their behaviors while they are confiding in each other.
+Which chart can display both the spread and the distribution of data?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -1751,8 +1731,7 @@ Anna wants to see how her friends&#39; daily habits differ—some spend more tim
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Sally, the organized planner**
-Sally loves structuring her week into categories—work, home, and leisure, each with smaller sub-tasks. She asks Visette to suggest a chart that can show how everything fits together in layers while they are color-coding their planners.
+Which chart can show hierarchical data in circular form?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
@@ -1790,9 +1769,7 @@ Sally loves structuring her week into categories—work, home, and leisure, each
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Matias, the funny one**
-Matias wants to visualize how audience laughter rises and falls throughout his comedy performance. He asks Visette to suggest a chart that shows smooth, flowing changes over time while they are pulling faces at each other.
-]
+Which chart can show how quantities vary smoothly over time?]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -1829,9 +1806,7 @@ Matias wants to visualize how audience laughter rises and falls throughout his c
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Luna, the empathetic caregiver**
-Luna observes how members of her support group exchange messages, advice, and encouragement. She asks Visette to suggest a chart that captures these connections between people while they are pouring wine for each other.
-]
+Which chart can show relationships and flows between groups?]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -1868,9 +1843,7 @@ Luna observes how members of her support group exchange messages, advice, and en
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**Xi, the creative dreamer**
-Xi monitors how her art sales fluctuate day by day—some days prices rise, other days they dip. She asks Visette to suggest a chart that shows how values change over time while they are lost in their thoughts.
-]
+Which chart can show daily value changes and ranges?]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -1907,8 +1880,7 @@ Xi monitors how her art sales fluctuate day by day—some days prices rise, othe
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Mohamed, the adventurous risk-taker**
-Mohamed compares his adventures across several factors—like distance, challenge, and temperature. He asks Visette to suggest a chart that can display all these aspects together while they are tightening their backpack straps.
+Which chart can show multiple variables side by side for comparison?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
@@ -1950,18 +1922,10 @@ Mohamed compares his adventures across several factors—like distance, challeng
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
-(if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
-]
-(else-if: $percentage &gt; 70)[
-**Great!** - [[Go here now-&gt;Story 8]]
-]
-(else:)[
 **Well done!** - [[Go here now-&gt;Story 7]]
 ]
 ]
-]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="13" name="Worksheet 1.2.2.4" tags="" position="1575,800" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//There is nothing warmer than family—whoever that may be for you. And Visette is fortunate to have such a large one. But how will Dataeon find them?//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="12" name="Worksheet 1.2.2.4" tags="" position="1575,800" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Violin Plot**
 A violin plot combines density estimation with a symmetric visual representation. The x-axis (or categorical axis) organizes groups, while the y-axis encodes the continuous variable. The shape of each “violin” reflects the kernel density estimate, with width proportional to density. Optional elements such as median lines or boxplots inside the violin convey summary statistics.
@@ -2026,8 +1990,7 @@ A streamgraph is a variant of an area chart, composed of stacked, flowing layers
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q4 to 0, $q5 to 0, $submitted to false)
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Visette&#39;s mother**
-The mother wants to see how her family&#39;s activities—work, school, and hobbies—change throughout the week. She asks Visette to suggest a chart that shows how these patterns flow smoothly over time while they are watering their French garden together.
+Which chart can show how quantities rise and fall over time in a flowing form?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -2065,9 +2028,9 @@ The mother wants to see how her family&#39;s activities—work, school, and hobb
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)
+(css:&quot;font-size:0.8em;&quot;)
 [
-**With Visette&#39;s father**
-The father enjoys organizing the family budget by main categories—needs, wants, and savings—with smaller sections beneath each. He asks Visette to suggest a chart that shows how everything fits together in layers while they are having an English breakfast.
+Which chart can show hierarchical data in circular layers?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
@@ -2105,8 +2068,7 @@ The father enjoys organizing the family budget by main categories—needs, wants
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s sister**
-The sister wants to visualize how she and her friends exchange texts, calls, and shared posts across their group. She asks Visette to suggest a chart that highlights the connections between people while they are scrolling through their phone.
+Which chart can show relationships and interactions between categories or groups?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
@@ -2144,9 +2106,7 @@ The sister wants to visualize how she and her friends exchange texts, calls, and
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s grandmother**
-The grandmother loves checking how her favorite fruit market prices go up and down each day. She asks Visette to suggest a chart that shows daily fluctuations clearly while she is eating one of her Fuji apples.
-]
+Which chart can show changes in value ranges over time?]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2183,9 +2143,7 @@ The grandmother loves checking how her favorite fruit market prices go up and do
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s grandfather**
-The grandfather wants to compare how long his grandkids spend reading, playing, and studying each day. He asks Visette to suggest a chart that shows both the spread and the shape of the data while she is polishing his thick glasses.
-]
+Which chart can display both the range and the distribution of data?]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2222,9 +2180,7 @@ The grandfather wants to compare how long his grandkids spend reading, playing, 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s cousin**
-The cousin wants to compare different vacation spots based on weather, cost, and travel time. He asks Visette to suggest a chart that can show multiple factors side by side while they are browsing travel blogs.
-]
+Which chart can show multiple variables across several options?]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2265,18 +2221,10 @@ The cousin wants to compare different vacation spots based on weather, cost, and
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
-(if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
-]
-(else-if: $percentage &gt; 70)[
-**Great!** - [[Go here now-&gt;Story 8]]
-]
-(else:)[
 **Well done!** - [[Go here now-&gt;Story 7]]
 ]
 ]
-]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="14" name="Worksheet 1.2.2.2" tags="" position="1575,475" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//There’s nothing warmer than the embrace of family—whatever form that takes. Visette, blessed with a vast and loving one, was about to reveal a truth that would change how Dataeon saw connection forever.//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="13" name="Worksheet 1.2.2.2" tags="" position="1575,450" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Violin Plot**
 A violin plot combines density estimation with a symmetric visual representation. The x-axis (or categorical axis) organizes groups, while the y-axis encodes the continuous variable. The shape of each “violin” reflects the kernel density estimate, with width proportional to density. Optional elements such as median lines or boxplots inside the violin convey summary statistics.
@@ -2341,8 +2289,7 @@ A streamgraph is a variant of an area chart, composed of stacked, flowing layers
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $submitted to false)
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Visette&#39;s mother**
-Visette&#39;s mother tracks how her family&#39;s weekly activities change: 30 hours of work, 20 of school, and 10 of leisure at the start of the week, shifting to 25, 25, and 15 by the weekend. She asks Visette to suggest a chart that shows how these patterns flow over time while they are watering their French garden together.
+30→25 (work), 20→25 (school), 10→15 (leisure). Which chart can show how quantities rise and fall over time in a flowing form?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q1&gt;[[
@@ -2381,8 +2328,7 @@ Visette&#39;s mother tracks how her family&#39;s weekly activities change: 30 ho
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Visette&#39;s father**
-Visette&#39;s father divides the family&#39;s monthly budget into Needs (50%), Wants (30%), and Savings (20%), with Needs split further into Groceries (25%), Bills (15%), and Transport (10%). He asks Visette to suggest a chart that shows how everything fits together in circular layers while they are having an English breakfast.
+Needs 50%, Wants 30%, Savings 20%. Which chart can show hierarchical data in circular form?
 ]
 (css:&quot;font-size:0.6em;&quot;)
 |q2&gt;[[
@@ -2420,9 +2366,7 @@ Visette&#39;s father divides the family&#39;s monthly budget into Needs (50%), W
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s sister**
-The sister observes her communication patterns with friends: she sends 40 messages to Emma, 25 to Noah, and 15 to Mia each day, and they often reply to one another in similar amounts. She asks Visette to suggest a chart that visualizes these mutual connections while they are scrolling through their phone.
-]
+40–25–15 messages exchanged. Which chart can show relationships and interactions between groups?]
 (css:&quot;font-size:0.6em;&quot;)
 |q3&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2460,14 +2404,7 @@ The sister observes her communication patterns with friends: she sends 40 messag
 ---
 
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s grandmother**
-The grandmother tracks fruit prices over four days:
-Day 1 (Open $2.00, High $2.50, Low $1.80, Close $2.30),
-Day 2 (Open $2.30, High $2.70, Low $2.10, Close $2.40),
-Day 3 (Open $2.40, High $2.80, Low $2.20, Close $2.60),
-Day 4 (Open $2.60, High $2.90, Low $2.40, Close $2.80).
-She asks Visette to suggest a chart that shows these ups and downs clearly while she is eating one of her Fuji apples.
-]
+Which chart can show daily value ranges with open, high, low, and close data?]
 (css:&quot;font-size:0.6em;&quot;)
 |q4&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2504,9 +2441,7 @@ She asks Visette to suggest a chart that shows these ups and downs clearly while
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s grandfather**
-The grandfather compares how much time his grandkids spend on daily activities: reading (1–4 hours), playing (2–6 hours), and studying (3–8 hours). He asks Visette to suggest a chart that shows both the spread and the distribution of these activities while she is polishing his thick glasses.
-]
+Reading 1–4 h, Playing 2–6 h, Studying 3–8 h. Which chart can display both range and distribution shape?]
 (css:&quot;font-size:0.6em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2543,9 +2478,7 @@ The grandfather compares how much time his grandkids spend on daily activities: 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Visette&#39;s cousin**
-The cousin compares vacation spots by three metrics—Average Temp (24 °C, 30 °C, 18 °C), Cost ($800, $950, $600), and Travel Time (4 h, 6 h, 2 h). He asks Visette to suggest a chart that shows these variables side by side while they are browsing travel blogs.
-]
+Temp 24–30–18 °C | Cost $800–950–600 | Time 2–6 h. Which chart can show multiple variables across several options?]
 (css:&quot;font-size:0.6em;&quot;)
 |q6&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2586,18 +2519,10 @@ The cousin compares vacation spots by three metrics—Average Temp (24 °C, 30 �
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
-(if: $percentage &gt; 90)[
-**Excellent!** - [[Go here now-&gt;Story 7.1]]
-]
-(else-if: $percentage &gt; 70)[
-**Great!** - [[Go here now-&gt;Story 8]]
-]
-(else:)[
 **Well done!** - [[Go here now-&gt;Story 7]]
 ]
 ]
-]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="15" name="Worksheet 1.2.2.1" tags="" position="1575,275" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//Visette found herself among an astonishing circle of souls, each one distinct, each one radiant in their own way. For Dataeon, this was the beginning of an experience unlike any other.//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="14" name="Worksheet 1.2.2.1" tags="" position="1575,275" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Violin Plot**
 A violin plot combines density estimation with a symmetric visual representation. The x-axis (or categorical axis) organizes groups, while the y-axis encodes the continuous variable. The shape of each “violin” reflects the kernel density estimate, with width proportional to density. Optional elements such as median lines or boxplots inside the violin convey summary statistics.
@@ -2663,8 +2588,7 @@ A streamgraph is a variant of an area chart, composed of stacked, flowing layers
 
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Anna, the loyal friend**
-Anna wants to compare how much time her five closest friends spend on social media each day: 2, 3, 4, 5, and 8 hours. She asks Visette to suggest a chart that shows both the range and the density of their screen times while they are confiding in each other.
+2, 3, 4, 5, 8 hours. Which chart can display both the spread and the shape of data distribution?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
@@ -2703,8 +2627,7 @@ Anna wants to compare how much time her five closest friends spend on social med
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**With Sally, the organized planner**
-Sally organizes her week into categories: Work (Emails 40%, Meetings 30%), Home (Chores 20%, Cooking 10%), and Leisure (Reading 15%, Movies 5%). She asks Visette to suggest a chart that shows these layers clearly while they are color-coding their planners.
+Work 70%, Home 30%, Leisure 20%. Which chart can show hierarchical data using circular segments?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
@@ -2742,9 +2665,7 @@ Sally organizes her week into categories: Work (Emails 40%, Meetings 30%), Home 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Matias, the funny one**
-Matias measures audience laughter during his comedy routine: 70 laughs in the first act, 40 in the middle, and 90 in the finale. He asks Visette to suggest a chart that shows how laughter levels rise and fall over time while they are pulling faces at each other.
-]
+70 → 40 → 90 laughs. Which chart can show smooth changes in data over time?]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2781,8 +2702,7 @@ Matias measures audience laughter during his comedy routine: 70 laughs in the fi
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Luna, the empathetic caregiver**
-Luna tracks interactions in her support group: 20 messages exchanged between Friends A and B, 15 between B and C, and 10 between A and C. She asks Visette to suggest a chart that shows how everyone connects while they are pouring wine for each other.
+A–B: 20 | B–C: 15 | A–C: 10. Which chart can display relationships between groups or categories?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
@@ -2820,14 +2740,7 @@ Luna tracks interactions in her support group: 20 messages exchanged between Fri
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**Xi, the creative dreamer**
-Xi tracks her art print prices over four days:
-Day 1 (Open $50, High $60, Low $48, Close $55)
-Day 2 (Open $55, High $65, Low $50, Close $62)
-Day 3 (Open $62, High $70, Low $60, Close $68)
-Day 4 (Open $68, High $72, Low $65, Close $70).
-She asks Visette to suggest a chart that shows these daily changes while they are lost in their thoughts.
-]
+Which chart can display daily open, high, low, and close values over time?]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2864,13 +2777,7 @@ She asks Visette to suggest a chart that shows these daily changes while they ar
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**With Mohamed, the adventurous risk-taker**
-Mohamed compares three hiking trips:
-Trip A (Elevation 1,000 m, Temp 25 °C, Distance 8 km),
-Trip B (1,500 m, 20 °C, 12 km),
-Trip C (900 m, 28 °C, 10 km).
-He asks Visette to suggest a chart that shows all these variables side by side while they are tightening their backpack straps.
-]
+Which chart can compare multiple variables across several items?]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
 (link: &quot;1. Violin Plot&quot;)[
@@ -2911,10 +2818,10 @@ He asks Visette to suggest a chart that shows all these variables side by side w
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
 **Percentage: (print: (round: $percentage))%**
-**Well done!** - [[Go here now-&gt;Surprise Bonus3]]
+**Well done!** - [[Go here now-&gt;Story 7]]
 ]
 ]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="16" name="Worksheet Test Level 1" tags="" position="2125,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[//Visette warned Dataeon. &quot;Visiting new places and countries let you explore the world, how it is organized, and meet new interesting people. This is the last step of our journey. With this, activity you will find and understand what you were looking for&quot;.//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="15" name="Worksheet Test Level 1" tags="" position="2025,575" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[]
 (css:&quot;font-size:0.8em;&quot;)[
 **Ridgeline Plot**
 Ridgeline plots are stacks of overlapping density curves aligned vertically, with the x-axis encoding the continuous variable and the y-axis used for vertical stacking. Each ridge represents a category or subgroup. Color and transparency can emphasize differences or density.
@@ -3009,9 +2916,7 @@ Parallel coordinates consist of multiple vertical axes, each representing a vari
 (set: $q1 to 0, $q2 to 0, $q3 to 0, $q4 to 0, $q5 to 0, $q6 to 0, $q7 to 0, $q8 to 0, $q9 to 0, $submitted to false)
 (css:&quot;font-size:0.8em;&quot;)
 [
-**In Italy**
-Laura has always been curious about how different pasta types—spaghetti, penne, and ravioli—vary across days of the week, portion sizes, and customer ratings. She asks Visette to suggest her a chart that can show all these variables at once, letting her see patterns and trends for each order while she snaps a picture of the Colosseum.
-]
+Which type of chart would you use to show how multiple variables vary for each observation, allowing you to see patterns and trends across all variables simultaneously?]
 (css:&quot;font-size:0.7em;&quot;)
 |q1&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3064,9 +2969,7 @@ Laura has always been curious about how different pasta types—spaghetti, penne
 ---
 (css:&quot;font-size:0.8em;&quot;)
 [
-**In Austria**
-Lukas wants to understand how coffee sales flow from type—espresso, cappuccino, or latte—to size—small, medium, or large—and finally to total sales, so he asks Visette to suggest him a chart that clearly shows the flow of quantities between these categories while she is entering the Leopold Museum.
-]
+Which type of chart would you use to show how quantities flow between multiple categorical stages?]
 (css:&quot;font-size:0.7em;&quot;)
 |q2&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3118,9 +3021,7 @@ Lukas wants to understand how coffee sales flow from type—espresso, cappuccino
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Peru**
-José wants to know the number of visitors to Lima, Cusco, Arequipa, and the Amazon and the types of activities they participate in—hiking, cultural tours, wildlife watching. So, he asks Visette to suggest a chart that can show both the total number of visitors per region and the contribution of each activity while she is visiting Machu Picchu.
-]
+Which type of chart would you use to compare total values across categories and see how each subcategory contributes to the whole?]
 (css:&quot;font-size:0.7em;&quot;)
 |q3&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3172,9 +3073,7 @@ José wants to know the number of visitors to Lima, Cusco, Arequipa, and the Ama
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Australia**
-Emily wants to track the weights of kangaroos observed in different regions—Outback, Queensland, Victoria—. So, she asks Visette to suggest a chart that can show all individual kangaroo weights along each region, helping her see the distribution, clusters, and any outliers clearly while she is amazed by the Great Barrier Reef.
-]
+Which type of chart would you use to show all individual data points across categories to reveal variation and outliers?]
 (css:&quot;font-size:0.7em;&quot;)
 |q4&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3226,9 +3125,7 @@ Emily wants to track the weights of kangaroos observed in different regions—Ou
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Namibia**
-Johannes wants to analyze how mineral concentration and elevation vary across a large section of the Namib Desert. So, he asks Visette to suggest a chart that aggregates the data into hexagonal bins, showing areas with high and low densities of observations while she is exploring the Sossusvlei Dunes.
-]
+Which type of chart would you use to show the density of a large number of data points across two numeric variables using hexagonal bins?]
 (css:&quot;font-size:0.7em;&quot;)
 |q5&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3280,9 +3177,7 @@ Johannes wants to analyze how mineral concentration and elevation vary across a 
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Singapore**
-Wei wants to explore how customer preferences for different food types vary across age groups—children, adults, and seniors. So, she asks Visette to suggest a chart that uses area to show the proportion of each food type within each age group while she is enjoying the view of Marina Bay Sands.
-]
+Which type of chart would you use to show the proportions and relationships between multiple categorical variables?]
 (css:&quot;font-size:0.7em;&quot;)
 |q6&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3334,9 +3229,7 @@ Wei wants to explore how customer preferences for different food types vary acro
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Canada**
-Chloe wants to study the relationship between average snowfall and the population of snowshoe hares across different regions. So, she asks Visette to suggest a chart that can show how these two variables relate while she is wandering in the Banff National Park.
-]
+Which type of chart would you use to summarize the strength and direction of correlations among multiple numeric variables in a matrix format?]
 (css:&quot;font-size:0.7em;&quot;)
 |q7&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3388,9 +3281,7 @@ Chloe wants to study the relationship between average snowfall and the populatio
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In India**
-Anirudh wants to compare the literacy rates of different states between 2010 and 2020. So, he asks Visette to suggest a chart that can show how each state&#39;s literacy rate has changed over the decade while she is in the Taj Mahal.
-]
+Which type of chart would you use to compare how values for several categories change between two specific points in time?]
 (css:&quot;font-size:0.7em;&quot;)
 |q8&gt;[[
 (link: &quot;1. Ridgeline Plot&quot;)[
@@ -3442,8 +3333,7 @@ Anirudh wants to compare the literacy rates of different states between 2010 and
 ]
 ---
 (css:&quot;font-size:0.8em;&quot;)[
-**In Oman**
-Fatima wants to explore how the sizes of fish are distributed across different depth ranges in the Gulf of Oman. So, she asks Visette to suggest a chart that visually layers the distributions for each depth range, making it easy to see differences in shape, spread, and peaks while she is visiting Wadi Shab.
+Which type of chart would you use to show multiple distributions across categories, making differences in shape and spread easy to compare?
 ]
 (css:&quot;font-size:0.7em;&quot;)
 |q9&gt;[[
@@ -3499,287 +3389,58 @@ Fatima wants to explore how the sizes of fish are distributed across different d
 (set: $totalScore to $q1 + $q2 + $q3 + $q4 + $q5 + $q6 + $q7 + $q8 + $q9)(set: $maxScore to 18)(set: $percentage to ($totalScore / $maxScore) * 100)
 (replace: ?result)[
 **Your Score: $totalScore out of $maxScore points**
+
 **Percentage: (print: (round: $percentage))%**
+
 (if: $percentage &gt; 90)[
-**[[Go here now-&gt;Final1]]**
+(text-colour:purple)[**Excellent!**]
 ]
 (else-if: $percentage &gt; 75)[
-**[[Go here now-&gt;Final2]]**
+(text-colour:purple)[**Great!**]
 ]
 (else-if: $percentage &gt; 60)[
-**[[Go here now-&gt;Final3]]**
+(text-colour:purple)[**Well done!**]
 ]
 (else-if: $percentage &gt; 50)[
-**[[Go here now-&gt;Final4]]** 
+(text-colour:purple)[**Good!**]
 ]
 (else:)[
-**[[Go here now-&gt;Final5]]**
+(text-colour:purple)[**Do not give up!**]
 ]
 ]
 ]
-|result&gt;[]</tw-passagedata><tw-passagedata pid="17" name="Story 8" tags="" position="1900,750" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Dataeon was silent, overcome with emotion. Visette noticed and reflected on the richness of humanity—their diversity, the many places they inhabit, and the variety of cultures they embrace. She knew it was time for him to see more and urged him to continue the journey by her side.//]
-
-[&lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/trip.png&quot; style=&quot;height:300px;&quot;&gt;]
-
-[[Continue-&gt;Worksheet Test Level 1]]</tw-passagedata><tw-passagedata pid="18" name="Story 5.1" tags="" position="1350,400" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//At times we cherish them, at others we resent them—but human life on Earth cannot exist without the presence of others around us. And Visette wanted to show Dataeon why especially some people matter so deeply to us. After taking a picture to a stray dog, she led the way silently.//]
+|result&gt;[]</tw-passagedata><tw-passagedata pid="16" name="Story 5.1" tags="" position="1350,375" size="100,100">(enchant:?page, (bg:#ffffff))
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select one of the two worksheets to continue.//]
 
 &lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/friends.jpg&quot; style=&quot;height:300px;&quot;&gt;
-        [[They meet her friends -&gt;Worksheet 1.2.2.1]]
+        [[Worksheet A -&gt;Worksheet 1.2.2.1]]
     &lt;/div&gt;
 
     &lt;div style=&quot;text-align:center;&quot;&gt;
-        &lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/family.jpg&quot;  style=&quot;height:300px;&quot;&gt;
-        [[They meet her family -&gt;Worksheet 1.2.2.2]]
+        [[Worksheet B -&gt;Worksheet 1.2.2.2]]
     &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Story 7.1" tags="" position="1900,425" size="100,100">(enchant:?page, (bg:#ffffff))
-(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Finally, Visette explains Dataeon that &quot;Goodbye Dataeon&quot; could be said in so many different ways on this planet depending on where you are. And she started backpacking again.//]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Disclaimer" tags="" position="525,550" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[In this test, you will work through various worksheets, each featuring six questions. For each question, you must choose the most appropriate chart. Once you make your selection, it cannot be changed, so be sure you are confident in your choice. After selecting a chart for each question, check your results and move on to the next set of questions.
 
-[&lt;img src=&quot;https://raw.githubusercontent.com/lorenzoamabili/hv/main/trip.png&quot; style=&quot;height:300px;&quot;&gt;]
-
-[[Continue-&gt;Worksheet Test Level 1]]</tw-passagedata><tw-passagedata pid="20" name="Surprise Bonus1" tags="" position="1225,850" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))
-(css:&quot;font-size:0.8em;&quot;)[]
-(set: $q1 to 0, $q2 to 0, $q2 to 0, $q3 to 0, $q3 to 0, $q4 to 0)
-
-(css:&quot;font-size:0.8em;&quot;)[
-**Magnitude** charts compare the relative size of values. Their purpose is to show how much larger or smaller one category or measure is than another. 
-
-**Correlation** charts display two variables together in a way that reveals whether and how they are related, with the purpose of identifying patterns, associations, or the absence of a relationship.
-
-**Change-over-time** charts arrange data in chronological order to show how something evolves and reveal trends, growth, decline, and temporal patterns. 
-
-**Part-to-whole** charts break a total into its component parts, showing proportions and how each part contributes to the overall whole. 
-]
-
-(css:&quot;font-size:0.9em;&quot;)[What is the chart type of each visualization?]
-
-(css:&quot;font-size:0.7em;&quot;)
-|q1&gt;[[  
-**Line Chart**  
-(link:&quot;Magnitude&quot;)[(replace:?q1)[**1. Line Chart (text-colour:red)[Magnitude is wrong, correct is Change over time]**](set:$q1 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q1)[**1. Line Chart (text-colour:red)[Correlation is wrong, correct is Change over time]**](set:$q1 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q1)[**1. Line Chart (text-colour:green)[Change over time is correct!]**](set:$q1 to 2)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q1)[**1. Line Chart (text-colour:red)[Part-to-whole is wrong, correct is Change over time]**](set:$q1 to 0)] 
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q2&gt;[[  
-**Bar Chart**  
-(link:&quot;Magnitude&quot;)[(replace:?q2)[**3. Bar Chart (text-colour:red)[Magnitude is wrong, correct is Comparison]**](set:$q2 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q2)[**3. Bar Chart (text-colour:red)[Correlation is wrong, correct is Comparison]**](set:$q2 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q2)[**3. Bar Chart (text-colour:red)[Change over time is wrong, correct is Comparison]**](set:$q2 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q2)[**3. Bar Chart (text-colour:red)[Part-to-whole is wrong, correct is Comparison]**](set:$q2 to 0)]  
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q3&gt;[[  
-**Scatter Plot**  
-(link:&quot;Magnitude&quot;)[(replace:?q3)[**5. Scatter Plot (text-colour:red)[Magnitude is wrong, correct is Correlation]**](set:$q3 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q3)[**5. Scatter Plot (text-colour:green)[Correlation is correct!]**](set:$q3 to 2)]  
-(link:&quot;Change over time&quot;)[(replace:?q3)[**5. Scatter Plot (text-colour:red)[Change over time is wrong, correct is Correlation]**](set:$q3 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q3)[**5. Scatter Plot (text-colour:red)[Part-to-whole is wrong, correct is Correlation]**](set:$q3 to 0)]  
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q4&gt;[[  
-**Bubble Chart**  
-(link:&quot;Magnitude&quot;)[(replace:?q4)[**6. Bubble Chart (text-colour:red)[Magnitude is wrong, correct is Correlation]**](set:$q4 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q4)[**6. Bubble Chart (text-colour:green)[Correlation is correct!]**](set:$q4 to 2)]  
-(link:&quot;Change over time&quot;)[(replace:?q4)[**6. Bubble Chart (text-colour:red)[Change over time is wrong, correct is Correlation]**](set:$q4 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q4)[**6. Bubble Chart (text-colour:red)[Part-to-whole is wrong, correct is Correlation]**](set:$q4 to 0)]  
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q5&gt;[[  
-**Pie Chart**  
-(link:&quot;Magnitude&quot;)[(replace:?q5)[**7. Pie Chart (text-colour:red)[Magnitude is wrong, correct is Part-to-whole]**](set:$q5 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q5)[**7. Pie Chart (text-colour:red)[Correlation is wrong, correct is Part-to-whole]**](set:$q5 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q5)[**7. Pie Chart (text-colour:red)[Change over time is wrong, correct is Part-to-whole]**](set:$q5 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q5)[**7. Pie Chart (text-colour:green)[Part-to-whole is correct!]**](set:$q5 to 2)] 
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q6&gt;[[  
-**Venn Diagram**  
-(link:&quot;Magnitude&quot;)[(replace:?q6)[**9. Venn Diagram (text-colour:red)[Magnitude is wrong, correct is Part-to-whole]**](set:$q6 to 0)]  
-(link:&quot;Correlation&quot;)[(replace:?q6)[**9. Venn Diagram (text-colour:red)[Correlation is wrong, correct is Part-to-whole]**](set:$q6 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q6)[**9. Venn Diagram (text-colour:red)[Change over time is wrong, correct is Part-to-whole]**](set:$q6 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q6)[**9. Venn Diagram (text-colour:green)[Part-to-whole is correct!]**](set:$q6 to 2)]  
-]]
----
-(link: &quot;Check your result&quot;)[  
-(set: $totalScore to $q1 + $q2 + $q3 + $q4 + $q5 + $q6)  
-(set: $maxScore to 12)  
-(set: $percentage to ($totalScore / $maxScore) * 100)  
-(replace:?page)[  
-**Your Score: $totalScore out of $maxScore points**  
-**Percentage: (print: (round: $percentage))%**  
-**Well done!** - [[Go here now-&gt;Story 5.1]]
-]
-]</tw-passagedata><tw-passagedata pid="21" name="Surprise Bonus3" tags="" position="1750,275" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))
-(css:&quot;font-size:0.8em;&quot;)[]
-(set: $q1 to 0, $q2 to 0, $q2 to 0, $q4 to 0, $q3 to 0, $q4 to 0)
-
-(css:&quot;font-size:0.8em;&quot;)[
-**Magnitude** charts compare the relative size of values. Their purpose is to show how much larger or smaller one category or measure is than another. 
-
-**Change-over-time** charts arrange data in chronological order to show how something evolves and reveal trends, growth, decline, and temporal patterns. 
-
-**Part-to-whole** charts break a total into its component parts, showing proportions and how each part contributes to the overall whole. 
-
-**Flow** charts illustrate the movement or transfer of quantities from one stage or category to another to explain processes, pathways, and transformations. 
-
-**Distribution** charts show how data points are spread across a range, serving the purpose of revealing patterns such as clustering, spread, and the shape of the dataset. 
-]
-
-(css:&quot;font-size:0.9em;&quot;)[What is the chart type of each visualization?]
-
-(css:&quot;font-size:0.7em;&quot;)
-|q1&gt;[[  
-**Violin Plot**  
-(link:&quot;Flow&quot;)[(replace:?q1)[**1. Violin Plot (text-colour:red)[Flow is wrong, correct is Distribution]**](set:$q1 to 0)]  
-(link:&quot;Distribution&quot;)[(replace:?q1)[**1. Violin Plot (text-colour:green)[Distribution is correct!]**](set:$q1 to 2)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q1)[**1. Violin Plot (text-colour:red)[Part-to-whole is wrong, correct is Distribution]**](set:$q1 to 0)]
-(link:&quot;Magnitude&quot;)[(replace:?q1)[**1. Violin Plot (text-colour:red)[Magnitude is wrong, correct is Distribution]**](set:$q1 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q1)[**1. Violin Plot (text-colour:red)[Change over time is wrong, correct is Distribution]**](set:$q1 to 0)]  
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q2&gt;[[  
-**Chord Diagram**  
-(link:&quot;Flow&quot;)[(replace:?q2)[**3. Chord Diagram (text-colour:green)[Flow is correct!]**](set:$q2 to 2)]  
-(link:&quot;Distribution&quot;)[(replace:?q2)[**3. Chord Diagram (text-colour:red)[Distribution is wrong, correct is Flow]**](set:$q2 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q2)[**3. Chord Diagram (text-colour:red)[Part-to-whole is wrong, correct is Flow]**](set:$q2 to 0)]  
-(link:&quot;Magnitude&quot;)[(replace:?q2)[**3. Chord Diagram (text-colour:red)[Magnitude is wrong, correct is Flow]**](set:$q2 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q2)[**3. Chord Diagram (text-colour:red)[Change over time is wrong, correct is Flow]**](set:$q2 to 0)]  
-]]
-(css:&quot;font-size:0.7em;&quot;)
-
-|q3&gt;[[  
-**Sunburst Chart**  
-(link:&quot;Flow&quot;)[(replace:?q3)[**5. Sunburst Chart (text-colour:red)[Flow is wrong, correct is Part-to-whole]**](set:$q3 to 0)]  
-(link:&quot;Distribution&quot;)[(replace:?q3)[**5. Sunburst Chart (text-colour:red)[Distribution is wrong, correct is Part-to-whole]**](set:$q3 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q3)[**5. Sunburst Chart (text-colour:green)[Part-to-whole is correct!]**](set:$q3 to 2)]  
-(link:&quot;Magnitude&quot;)[(replace:?q3)[**5. Sunburst Chart (text-colour:red)[Magnitude is wrong, correct is Part-to-whole]**](set:$q3 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q3)[**5. Sunburst Chart (text-colour:red)[Change over time is wrong, correct is Part-to-whole]**](set:$q3 to 0)]  
-]]  
-(css:&quot;font-size:0.7em;&quot;)
-
-|q4&gt;[[  
-**Candlestick Chart**  
-(link:&quot;Flow&quot;)[(replace:?q4)[**6. Candlestick Chart (text-colour:red)[Flow is wrong, correct is Change over time]**](set:$q4 to 0)]  
-(link:&quot;Distribution&quot;)[(replace:?q4)[**6. Candlestick Chart (text-colour:red)[Distribution is wrong, correct is Change over time]**](set:$q4 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q4)[**6. Candlestick Chart (text-colour:red)[Part-to-whole is wrong, correct is Change over time]**](set:$q4 to 0)]  
-(link:&quot;Magnitude&quot;)[(replace:?q4)[**6. Candlestick Chart (text-colour:red)[Magnitude is wrong, correct is Change over time]**](set:$q4 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q4)[**6. Candlestick Chart (text-colour:green)[Change over time is correct!]**](set:$q4 to 2)]  
-]]  
-(css:&quot;font-size:0.7em;&quot;)
-
-|q5&gt;[[  
-**Parallel Coordinates Plot**  
-(link:&quot;Flow&quot;)[(replace:?q5)[**7. Parallel Coordinates Plot (text-colour:red)[Flow is wrong, correct is Magnitude]**](set:$q5 to 0)]  
-(link:&quot;Distribution&quot;)[(replace:?q5)[**7. Parallel Coordinates Plot (text-colour:red)[Distribution is wrong, correct is Magnitude]**](set:$q5 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q5)[**7. Parallel Coordinates Plot (text-colour:red)[Part-to-whole is wrong, correct is Magnitude]**](set:$q5 to 0)]  
-(link:&quot;Magnitude&quot;)[(replace:?q5)[**7. Parallel Coordinates Plot (text-colour:green)[Magnitude is correct!]**](set:$q5 to 2)]  
-(link:&quot;Change over time&quot;)[(replace:?q5)[**7. Parallel Coordinates Plot (text-colour:red)[Change over time is wrong, correct is Magnitude]**](set:$q5 to 0)]  
-]]  
-(css:&quot;font-size:0.7em;&quot;)
-
-|q6&gt;[[  
-**Streamgraph**  
-(link:&quot;Flow&quot;)[(replace:?q6)[**8. Streamgraph (text-colour:red)[Flow is wrong, correct is Change over time]**](set:$q6 to 0)]  
-(link:&quot;Distribution&quot;)[(replace:?q6)[**8. Streamgraph (text-colour:red)[Distribution is wrong, correct is Change over time]**](set:$q6 to 0)]  
-(link:&quot;Part-to-whole&quot;)[(replace:?q6)[**8. Streamgraph (text-colour:red)[Part-to-whole is wrong, correct is Change over time]**](set:$q6 to 0)]  
-(link:&quot;Magnitude&quot;)[(replace:?q6)[**8. Streamgraph (text-colour:red)[Magnitude is wrong, correct is Change over time]**](set:$q6 to 0)]  
-(link:&quot;Change over time&quot;)[(replace:?q6)[**8. Streamgraph (text-colour:green)[Change over time is correct!]**](set:$q6 to 2)]  
-]]  
----
-(link: &quot;Check your result&quot;)[  
-(set: $totalScore to $q1 + $q2 + $q3 + $q4 + $q5 + $q6)  
-(set: $maxScore to 12)  
-(set: $percentage to ($totalScore / $maxScore) * 100)  
-(replace:?page)[  
-**Your Score: $totalScore out of $maxScore points**  
-**Percentage: (print: (round: $percentage))%**  
-**Well done!** - [[Go here now-&gt;Story 7.1]]
-]
-]
-</tw-passagedata><tw-passagedata pid="22" name="Final5" tags="" position="2300,875" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))[
-(text-colour:orange)[&#39;&#39;Ops...&#39;&#39;]
-
-//
-Dataeon is filled with enthusiasm, awe, and wonder. Human life is extraordinary, and the world itself is breathtaking—a truly remarkable place. However, after realizing this, he decides to reach out to all his friends, determined to convince them to take on their projections on Earth. 
-
-Visette is at risk, and the world itself hangs in the balance. What will happen next?
-//
-
-
-
-(text-colour:orange)[&#39;&#39;You must stay, help her, and be strong.&#39;&#39;]
-]</tw-passagedata><tw-passagedata pid="23" name="Final4" tags="" position="2300,750" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))[
-(text-colour:orange)[&#39;&#39;Well...&#39;&#39;]
-
-//
-The world is messy and complicated, yet endlessly intriguing. This glimpse only deepened Dataeon’s curiosity about all that remained hidden from him. Unable to resist, he lingers longer on Earth, unfortunately for Visette. 
-
-When, if ever, will he leave her in peace?
-//
-
-
-
-(text-colour:orange)[&#39;&#39;She still needs your help.&#39;&#39;]
-]</tw-passagedata><tw-passagedata pid="24" name="Final3" tags="" position="2300,625" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))[
-(text-colour:orange)[&#39;&#39;Well done!&#39;&#39;]
-
-//
-Dataeon is confused. The world is messy and complicated, chaotic, and crowded with far too many bothersome people. It seems best to leave and so he prepares to depart. 
-
-But can he truly leave the world once you experience it?
-//
-
-
-
-
-(text-colour:orange)[&#39;&#39;Stay with Visette longer until you are sure Dataeon has left.&#39;&#39;]
-]</tw-passagedata><tw-passagedata pid="25" name="Final2" tags="" position="2300,500" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))[
-(text-colour:orange)[&#39;&#39;Great!&#39;&#39;]
-
-//
-Dataeon marveled at the world, overwhelmed by its magnificence and aware of how much remained to be explored.
-Yet he also recognized the beauty of data visualization and the joy it brings. He knew he must leave, allowing Visette to continue enjoying it and helping those around her create meaningful charts despite the bother they provoke her.
-
-“I am leaving” he resolved, ready to move on, &quot;but at one condition!&quot;.
-//
-
-
-
-(text-colour:orange)[&#39;&#39;Keep helping her from time to time.&#39;&#39;]
-]</tw-passagedata><tw-passagedata pid="26" name="Final1" tags="" position="2300,375" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))[
-(text-colour:orange)[&#39;&#39;Excellent!&#39;&#39;]
-
-//
-Dataeon enjoyed the journey. The world is magnificent, and he learnt quite a bit of human life. Content and grateful, he appreciated every effort made by Visette (and you) to make his journey as enjoyable as possible.
-
-Proud to be Visette on planet Earth, he left her, maybe forever.
-//
-
-
-
-(text-colour:orange)[&#39;&#39;You are free. For now.&#39;&#39;]
-]</tw-passagedata><tw-passagedata pid="27" name="Disclaimer" tags="" position="525,550" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fbfaf8))(css:&quot;font-size:0.8em;&quot;)[In this game, you will work through various worksheets, each featuring six scenarios. For each scenario, you must choose the most appropriate chart. Once you make your selection, it cannot be changed, so be sure you are confident in your choice. After selecting a chart for each scenario, check your results and move on to the next chapter.
-
-At the start of each worksheet, you will find a brief introduction to the six chart options available for that task. You will earn one point for selecting the correct chart and two points for choosing the best possible answer. Have fun!]
+At the start of each worksheet, you will find a brief introduction to the six chart options available for that task. You will earn one point for selecting the correct chart and two points for choosing the best possible answer. Good luck!]
 
 
 (set: _style to (css:&quot;display:block; text-align:right;&quot;))
 _style[
 [[Let&#39;s start-&gt;Worksheet 1.1.1.1]]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="18" name="Story 7" tags="" position="1825,575" size="100,100">(enchant:?page, (bg:#ffffff))
+(text-colour:black)+(css:&quot;font-size:0.8em;&quot;)[//Select the final worksheet to continue.//]
+
+&lt;div style=&quot;display:flex; justify-content:space-between; gap:20px;&quot;&gt;
+
+    &lt;div style=&quot;text-align:center;&quot;&gt;
+      [[Final Worksheet-&gt;Worksheet Test Level 1]]
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
